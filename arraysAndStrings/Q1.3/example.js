@@ -1,13 +1,15 @@
+// Give string replace spaces with '%20' do not do the end spaces
+
 // function makeUrl(str) {   // o(n^2) messy
 //   str = str.split('');
 //   for (let i = 0; i < str.length; i++) {
 //     if (str[i] === ' ' && str.slice(i).filter(el => el != ' ').length) {
 //       str[i] = str[i] = '%20';
 //     } else if (str[i] === ' ') {
-//       return str.slice(0, i);
+//       return str.slice(0, i).join('');
 //     }
 //   }
-//   return str.join('');
+//   //return str.join(''); unneeded
 // }
 
 // With hints
@@ -26,4 +28,4 @@ function makeUrl(str) {
   return output;
 }
 
-console.log(makeUrl('t e t t        '));
+console.log(makeUrl('t e t t        ')); // t%20w%20t%20t
