@@ -1,3 +1,5 @@
+//delete middle node
+
 function Node(val){
     this.val = val
     this.next = null;
@@ -11,3 +13,6 @@ LL.prototype.add = function(node, start){
     } 
     else{ start.next ? this.add(node, start.next) : start.next = node }
 }
+
+
+/* oka */
