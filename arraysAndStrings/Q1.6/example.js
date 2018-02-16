@@ -11,7 +11,7 @@ function strCompression(str) {
   for (const key in hash) {
     output += key + hash[key];
   }
-  return output
+  return output;
 }
 
 console.log(strCompression('aaabbbccc'));
